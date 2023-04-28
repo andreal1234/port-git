@@ -3,12 +3,12 @@ exports.sendEmail = async (email, otp) => {
     const transport = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL,
-        pass: process.env.PASS
+        user: "seaport@seaport.in.net",
+        pass: "khmlraiewqowkbmc"
       },
     })
     await transport.sendMail({
-      from: process.env.EMAIL,
+      from: "seaport@seaport.in.net",
       to: email,
       subject: "Seaport Password",
       text:"" ,
